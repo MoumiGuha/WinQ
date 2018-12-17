@@ -1,0 +1,22 @@
+body {
+    
+}
+
+.mydiv .loginBox {
+    background-color: bisque;
+    width: 50%;
+    height: inherit;
+    margin-left: 32%;
+    margin-top: 150px;
+}
+
+
+.title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.heading {
+    text-align: center;
+    
+}
