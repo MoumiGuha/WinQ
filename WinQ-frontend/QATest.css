@@ -52,3 +52,10 @@ header {
     margin: 0;
     padding-top: 10px;
 }
+
+#next {
+    position: absolute;
+    width: 60px;
+    left: 915px;
+    right: 242px;
+}
