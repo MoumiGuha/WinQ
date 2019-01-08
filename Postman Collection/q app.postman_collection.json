@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "fa460bb4-49ef-4f79-a8f8-ed809b4a6b02",
+		"name": "q app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generate Quiz",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\"\t:\t\"quiz1\",\n\t\"subjectIds\"\t:\t[\n\t\t\"7c9beab1-4886-4597-9774-ec572823c20d\"\n\t\t]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Quiz By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/quiz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Subjects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/subject/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"subject",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Subject",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "utf-8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\"\t:\t\"Physics\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"subject"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Question",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"question\"\t\t\t:\t\"Where is Wayanad?\",\n\t\"optionRequests\"\t:\t[\n\t\t{\n\t\t\t\"value\"\t\t:\t\"West Bengal\",\n\t\t\t\"isCorrect\"\t:\tfalse\n\t\t},\n\t\t{\n\t\t\t\"value\"\t\t:\t\"Kerala\",\n\t\t\t\"isCorrect\"\t:\ttrue\n\t\t},\n\t\t{\n\t\t\t\"value\"\t\t:\t\"Bihar\",\n\t\t\t\"isCorrect\"\t:\tfalse\n\t\t},\n\t\t{\n\t\t\t\"value\"\t\t:\t\"Karnataka\",\n\t\t\t\"isCorrect\"\t:\tfalse\n\t\t}\n\t],\n\t\"subjectId\"\t\t\t:\t\"7c9beab1-4886-4597-9774-ec572823c20d\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/question",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"question"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
